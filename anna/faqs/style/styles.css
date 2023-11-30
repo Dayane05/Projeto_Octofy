@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import "../../Header/style.css";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 135px;
+  width: 45%;
+  min-width: 500px;
+  border: 1px solid white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+}
+
+.wrapper {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.toggle,
+.content {
+  font-family: "Inter", sans-serif;
+}
+
+.toggle {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #5623af;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.content {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.tutoria-button {
+  border-radius: 5px;
+  background: #5623af;
+  width: 115px;
+  height: 35px;
+  flex-shrink: 0;
+  border: none;
+  margin-left: 500px;
+  margin-bottom: 50px;
+  color: #fff;
+}

@@ -1,0 +1,253 @@
+@import "../Header/styles.css";
+
+.home {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    font-family: 'Poppins', sans-serif;
+    gap: 100px;
+}
+
+.home2 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    font-family: 'Poppins', sans-serif;
+    gap: 80px;
+}
+
+strong {
+    color:#898EFF;
+    ;
+}
+
+.home-text {
+    max-width: 37rem;   
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.home-text button {
+    border: none;
+    border-radius: 5px;
+    background: #898EFF;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 254px;
+    padding: 12px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-text button:hover {
+    background-color: blueviolet;
+}
+
+.home-text button a {
+    text-decoration-line: none;
+    color: white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+
+img {
+    width: 100%;
+}
+
+.vantagens {
+    width: 100%;
+    background-color:#898EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    gap: 10px;
+}
+
+.vantagens .vant{
+    display: flex;
+    padding-top: 20px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: #686dce;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    margin: 0px 20px;
+}
+
+.card:hover {
+    height: 350px;
+}
+
+.card .img-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+}
+
+.card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.mais {
+    font-size: 20px;
+    text-align: justify;
+    line-height: normal;
+}
+
+.secao4-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.secao4-div-card {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    justify-content: center ;
+    height: 100px;
+    margin: 50px 150px;
+    padding: 20px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.5s ease;
+
+}
+
+.secao4-div-card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.secao4-div-card img {
+  width: 70%;
+}
+
+footer {
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+@media (max-width:1024px) {
+   h2 {
+    margin-bottom: 35px;
+   }
+
+   .secao4-div-card {
+    margin: 30px 100px;
+   }
+}
+
+@media (max-width:768px) {
+    h1 {
+       font-size: 35px; 
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .mais {
+        font-size: 14px;
+    }
+
+    .secao4-div-card {
+        margin: 30px 70px;
+       }
+}
+
+@media (max-width:480px) {
+    .home {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .home-text {
+        text-align: -webkit-center;
+    }
+
+    h1 {
+        padding-top: 40px;
+        font-size: 25px; 
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .home-text button {
+        display: flex;
+        width: 188px;
+        height: 61px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+     }
+
+     .secao4-div-card {
+        margin: 25px 50px;
+       }
+}

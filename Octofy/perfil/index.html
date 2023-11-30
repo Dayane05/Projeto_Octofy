@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <input type="checkbox" class="menu-faketrigger" name="" id="" />
+
+        <div class="menu-lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="/Octofy/perfil/index.html">Perfil</a></li>
+          <li><a href="/octo/planos.html">Planos</a></li>
+          <li><a href="/Octofy/blog/Blog.html">Blog</a></li>
+          <li><a href="/Octofy/Lading page/landing.html">Sair</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <img class="logo" src="../Header/img/Logo Octofy.png" alt="" />
+      </div>
+    </header>
+
+    <script src="script/script.js" type="module"></script>
+    <main>
+      <div class="container">
+        <div class="input-container">
+          <div class="input-image">
+            <img src="img/Vector.png" />
+            <label for="arquivo" class="picture-span">Editar foto </label>
+            <input type="file" name="arquivo" id="arquivo" class="input" />
+          </div>
+
+           <!-- <div class="name-container">
+            <h3>Nome Completo</h3>
+          </div>  -->
+
+          <div class="progress">
+            <div class="dados">
+              <h4>Dados sobre o progresso</h4>
+            </div>
+            <div class="progress-bar">
+              <img
+                src="img/2169619_bar_chart_financial_graph_graphic_icon 1 (1).png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="rendimento">
+            <div class="dados-rendimento">
+              <h4>Dados sobre o rendimento</h4>
+            </div>
+            <div class="rendimento-bar">
+              <img
+                src="img/2172770_business graph_business growth_graph_growth chart_growth graph_icon 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <label for="name">Nome Completo*</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="input-box">
+            <label for="email">E-mail*</label>
+            <input type="text" id="email" required />
+          </div>
+          <div class="input-box">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" required />
+          </div>
+          <div class="input-box">
+            <label for="date">Data de Nascimento</label>
+            <input type="date" id="date" required />
+          </div>
+          <div class="input-box">
+            <label for="meta">Meta</label>
+            <input type="text" id="meta" required />
+          </div>
+          <div class="input-button">
+            <button class="btn-editar"><a href="">Editar Perfil</a></button>
+            <button class="btn-salvar">
+              <a href="">Salvar Informações</a>
+            </button>
+            <button class="btn-painel"><a href="/Octofy/Painel dashboard admin/dashboard.html">painel</a></button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

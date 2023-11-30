@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assents/css/style.css">
+        <link rel="stylesheet" href="assents/css/stilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.google.com/?query=poppins">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <title>Compra | Octofy </title>
+    </head>
+<body>
+    <header>
+        <nav class="nav-bar">
+          <div class="Logo">
+            <img id="Logo-web" src="../img/Logo-Octofy-png" alt="Imagem">
+          </div>
+    
+          <div class="nav-list">
+            <ul>
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+              <li class="nav-item"><a href="planos.html" class="nav-link">Planos</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            </ul>
+          </div>
+    
+          <div class="login">
+            <button><a href="#">Cadastre-se</a>
+          </div></button>
+          </div>
+    
+          <div class="mobile-menu-icon">
+            <button id="mobile-menu-button"><img class="icon" src="
+                            ../img/menu.svg" alt=""></button>
+          </div>
+        </nav>
+      </header>
+    
+      <div class="container">
+
+        <form action="processar_formulario.php" method="post">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Endereo de Cobrança</h3>
+                    <div class="inputBox">
+                        <span> Primeiro nome:</span>
+                        <input type="text" name="primeiroNome" placeholder="Mariana">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" name="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Endereço :</span>
+                        <input type="text" name="endereco" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Cidade:</span>
+                        <input type="text" name="cidade" placeholder="Barueri">
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Estado :</span>
+                            <input type="text" placeholder="São Paulo">
+                        </div>
+                        <div class="inputBox">
+                            <span>CEP :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col">
+    
+                    <h3 class="title">Pagamento</h3>
+    
+                    <div class="inputBox">
+                        <span>Cartões aceitos:</span>
+                        <img src="assents/img/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Nome que está no cartão:</span>
+                        <input type="text" placeholder="Mariana Araújo">
+                    </div>
+                    <div class="inputBox">
+                        <span> Número do Cartão :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span> Mês de exp  :</span>
+                        <input type="text" placeholder="january">
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span> Ano de exp :</span>
+                            <input type="number" placeholder="2022">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+    
+                </div>
+        
+            </div>
+    
+            <input type="submit" value="Finalizar!" class="submit-btn">
+    
+        </form>
+      </div>
+    
+
+    <script src="js/jvscript.js"></script>
+      
+</body>
+</html>

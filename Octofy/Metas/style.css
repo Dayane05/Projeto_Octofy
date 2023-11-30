@@ -1,0 +1,129 @@
+@import "../header_cadas/style.css";
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+    box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 920px;
+    height: 635px;
+
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.metas {
+    width: 702px;
+    height: 56px;
+    border-radius: 5px;
+    border: 1px solid #AAA;
+    font-size: 16px;
+    margin: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+#quest {
+    width: 20px;
+    height: 20px;
+    border: 1 px solid #AAAAAA;
+    margin-left: 20px;
+    accent-color: #5623AF;
+}
+
+button {
+    width: 280px;
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #acb1ff;
+    border: none;
+    border-radius: 10px;
+    transition: all ease .5s;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #5623AF;
+}
+
+.avançar {
+    padding: 20px;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .metas {
+        width: 502px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .metas {
+        width: 302px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .elements {
+        box-shadow: none;
+    }
+
+    .metas {
+        width: 278px;
+        text-align: start;
+        gap: 8px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    button {
+        margin-top: 30px;
+        width: 180px;
+        height: 45px;
+    }
+
+}

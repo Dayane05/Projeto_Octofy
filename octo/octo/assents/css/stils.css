@@ -1,0 +1,91 @@
+body {
+    min-height: 340px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Definindo altura total da viewport */
+}
+
+.video {
+    border: 2px outset #a16aff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1096px; 
+    height: 30rem;
+    padding: 1.5rem;
+}
+
+.botton .settle {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    background: #5623AF;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sub {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.title {
+    font-size: 0.8rem;
+    text-align: left;
+    margin: 1.5rem;
+}
+
+.line {
+    border-color: #5623AF;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 1920px) {
+    .margin {
+        margin: 10rem;
+    }
+
+    .video {
+        margin: 5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .margin {
+        margin: 2rem;
+    }
+
+    .video {
+        margin: 2rem;
+    }
+
+    .botton .settle {
+        margin-right: 10px;
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .sub {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 0.6rem;
+    }
+}

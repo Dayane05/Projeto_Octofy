@@ -1,0 +1,187 @@
+@import "../Header/styles.css";
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    gap: 80px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+/* Isso fazia com que a imagem no header ficasse deformada */
+/* img {
+    width: 600px;
+    height: 450px;
+} */
+
+.equipe {
+    width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: pop;
+	padding: 50px;
+}
+
+.equipe .heading{
+	font-size: 30px;
+	margin-bottom: 80px;
+	position: relative;
+}
+.heading span{
+	color: #7d2ae8;
+}
+.heading::after{
+	content: " ";
+	position: absolute;
+	width: 60%;
+	height: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	background-color: #BCBFFF;
+}
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container .card{
+	width: 270px;
+	height: 350px;
+	position: relative;
+	border-radius: 15px;
+	background-color: #fff;
+	overflow: hidden;
+	box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.37);
+	margin:15px;
+}
+.card::after{
+	content: " ";
+	width: 100%;
+	height: 40%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #898ef0;
+}
+.card img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: fit;
+	transition: .6s;
+	box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.37);
+	z-index: 99;
+}
+.card:hover img{
+	transform: scale(.50) translateY(-120px);
+	border-radius: 15px;
+}
+.card .details{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding-bottom: 40px;
+	transform: translateY(100%);
+	transition: .6s;
+}
+.card:hover .details{
+	transform: translateY(0);
+}
+.details h3{
+	font-size: 22px;
+	color:#7d2ae8;
+}
+.details p{
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 7px;
+}
+.details .social-links{
+	display: flex;
+}
+.details .social-links a{
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	border-radius: 50%;
+	color: #333;
+	background-color: rgb(182, 182, 182);
+	text-decoration: none;
+	transition: .6s;
+	display: grid;
+	place-items: center;
+	font-size: 17px;
+}
+.details .social-links a:hover{
+	transform: rotate(360deg);
+	background-color: #7d2ae8;
+	color: #fff;
+}
+
+
+
+@media (max-width: 1190px) {
+    .main {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width: 580px) {
+    .main {
+        flex-wrap: wrap-reverse;
+        margin-left: 55px;
+        margin-right: 55px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .main {
+        flex-wrap: wrap-reverse;
+        margin-left: 35px;
+        margin-right: 35px;
+        gap: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 250px;
+        height: 188px;
+    }
+
+}

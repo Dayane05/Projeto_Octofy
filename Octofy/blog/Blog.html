@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="IMG/img header/polvo-octofy 1.png" sizes="16x16">
+
+    <link rel="stylesheet" href="CSS/blog.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Blog</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="Logo">
+                <img id="Logo-web" src="IMG/img header/Logo Octofy.png" alt="">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/Octofy/Lading page/landing.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/Octofy/Quem Somos/quem-somos.html" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="/octo/planos.html" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
+                </ul>
+
+            </div>
+
+            <div class="login">
+                <a href="#" class="nav-link">Login</a>
+                <button><a href="#">Cadastre-se</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="IMG/img header/menu.svg" alt=""></button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/Octofy/Lading page/landing.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/Octofy/Quem Somos/quem-somos.html" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="/octo/planos.html" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
+            </ul>
+
+            <div class="login">
+                <a href="#" class="nav-link">Login</a>
+                <button><a href="#">Cadastre-se</a></button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <script src="script.js"></script>
+
+    <main>
+        <div class="pag">
+            <h1>Blog</h1>
+        </div>
+
+        <div class="filter-section">
+            <select id="category-filter">
+                <option value="all">Todas as Categorias</option>
+                <option value="Finança">Finanças</option>
+                <option value="Jovens">Jovens</option>
+                <option value="Educação">Educação</option>
+                <option value="Risco/Problema">Risco/Problema</option>
+            </select>
+        </div>
+
+        <div class="post">
+            <!--Primeiro Card-->
+            <article data-category="all,Finança,Jovens">
+
+                <div class="card"> <!--card-->
+
+                    <div class="image"> <!--imagem-->
+                        <a href="news1.html">
+                            <img src="IMG/news 1.jpg">
+                    </div>
+
+                    <div class="texto">
+
+                        <div class="title"> <!--titulo-->
+                            <h1>Inteligência financeira na adolescência traz benefícios</h1>
+                        </div>
+                        <div class="descri"> <!--subtitulo ou descrição-->
+                            <p> De acordo com dados recentemente divulgados da Peic...</p>
+                        </div>
+
+                        <div id="linha"></div> <!--linha-->
+
+                        <div class="data"> <!--data-->
+                            <p>14/09/2023</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </article>
+
+            <!--Segundo Card-->
+            <article data-category="all,Jovens">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news2.html">
+                            <img src="IMG/news 2.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Por que os jovens têm tanta dificuldade em guardar dinheiro? </h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> Uma pesquisa mostrou que 47% da geração Z...</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>11/09/2023</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </article>
+
+            <!--Terceiro Card-->
+            <article data-category="all,Finança,Jovens,Educação">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news3.html">
+                            <img src="IMG/news 3.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Educação financeira PARA CRIANÇAS: como ensinar SEUS FILHOS a lidar com o dinheiro?
+                            </h1>
+                        </div>
+
+                        <div class="descri">
+                            <p>Ações simples podem ajudar os pequenos a entender como...</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>05/09/2023</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Quarto card-->
+            <article data-category="all,Jovens,Risco/Problema">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news4.html">
+                            <img src="IMG/news 4.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Jovens em Perigo Financeiro</h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> aumento alarmante da inadimplência e a necessidade urgente de Educação Financeira...</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>18/07/2023</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Quinto card-->
+            <article data-category="all,Finança,Jovens">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news5.html">
+                            <img src="IMG/news 5.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>47% dos jovens da geração Z não realizam o controle das finanças, aponta pesquisa CNDL/ SPC Brasil</h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> Estudo revela que a maioria dos jovens...</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>06/05/2023</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Sexto card-->
+            <article data-category="all,Educação">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news6.html">
+                            <img src="IMG/news 6.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Educação financeira: estudo é caminho para jovens sem dívidas</h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> O estudo da educação financeira é o caminho para reduzir o índice de endividamento entre os jovens...</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>27/03/2023</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Sétimo card-->
+            <article data-category="all,Risco/Problema">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news7.html">
+                            <img src="IMG/news 7.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Problemas financeiros e saúde mental: como um afeta o outro</h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> Problemas financeiros afetam a saúde mental, visto que compõe uma parte significativa de nossas vidas</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>16/08/2022</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Oitavo card-->
+            <article data-category="all,Finança,Jovens">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news8.html">
+                            <img src="IMG/news 8.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>De onde emanam as principais dificuldades financeiras dos jovens</h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> Ausência de investimento na formação e educação para a gestão eficiente do dinheiro contribuem para...</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>12/07/2022</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Nono card-->
+            <article data-category="all,Finança,Jovens">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news9.html">
+                            <img src="IMG/news 9.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Quase metade dos jovens brasileiros não controla suas finanças</h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> Para contribuir para mudar esse cenário, mais de 12 mil alunos no estado de São Paulo poderão aprender...</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>30/09/2021</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Décimo card-->
+            <article data-category="all,Finança,Jovens">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news10.html">
+                            <img src="IMG/news 10.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Apenas 25% dos jovens de 18 a 30 anos fazem controle financeiro</h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> Pesquisa revela endividamento recorde da chamada Geração Z</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>27/10/2019</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Décimo primeiro card-->
+            <article data-category="all,Jovens">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news11.html">
+                            <img src="IMG/news 11.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Erros financeiros que os jovens cometem </h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> O jovem é uma figura que merece atenção especial no mundo das finanças pessoais.</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>24/02/2017</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--Décimo segundo card-->
+            <article data-category="all,Risco/Problema">
+
+                <div class="card">
+
+                    <div class="image">
+                        <a href="news12.html">
+                            <img src="IMG/news 12.jpg">
+                    </div>
+
+                    <div class="texto">
+                        <div class="title">
+                            <h1>Quase 9 milhões de jovens estão enrolados com dívidas no Brasil </h1>
+                        </div>
+
+                        <div class="descri">
+                            <p> Dezoito porcento das pessoas de até 20 anos estão com o CPF “sujo”; veja dicas de especialistas para não entrar nessa fria</p>
+                        </div>
+
+                        <div id="linha"></div>
+
+                        <div class="data">
+                            <p>15/02/2017</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+            <!--botão load more-->
+            <a href="#load_more" class="load-more" id="load_more"> <!--botão load more-->
+                Load more
+                <span class="loading"><span></span></span>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        const loadmore = document.querySelector('.load-more');
+
+        let currentItems = 4;
+        loadmore.addEventListener('click', (e) => {
+            const elementList = [...document.querySelectorAll('.post article')];
+            e.target.classList.add('show-loader');
+
+            for (let i = currentItems; i < currentItems + 4; i++) {
+                setTimeout(function () {
+                    e.target.classList.remove('show-loader');
+                    if (elementList[i]) {
+                        elementList[i].style.display = 'flex';
+                    }
+                }, 3000)
+            }
+            currentItems += 4;
+
+            //hide load button after fully load
+            if (currentItems >= elementList.length) {
+                event.target.classList.add('loaded')
+            }
+
+        })
+        // Adicione esta parte para ocultar o botão quando uma categoria diferente de "Todas as Categorias" for selecionada
+        const categoryFilter = document.getElementById("category-filter");
+
+        categoryFilter.addEventListener("change", function () {
+            const selectedCategory = categoryFilter.value;
+
+            if (selectedCategory !== "all") {
+                loadmore.style.display = "none";
+            } else {
+                loadmore.style.display = "block";
+            }
+        });
+    </script>
+
+
+
+    <script src="JS/filter.js"></script>
+
+</body>
+
+
+</html>

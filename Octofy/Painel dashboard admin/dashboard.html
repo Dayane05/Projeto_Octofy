@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/post.css">
+    <link rel="shortcut icon" href="assets/img/img header/polvo-octofy 1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <script src="assets/JS/script.js"></script>
+    <script src="assets/JS/sidebar.js"></script>
+
+    <title>Painel de Postagem</title>
+</head>
+
+<header>
+
+    <nav class="nav-bar">
+        <div class="Logo">
+            <img id="Logo-web" src="assets/img/img header/Logo Octofy.png" alt="">
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            </ul>
+
+        </div>
+
+        <div class="login">
+            <a href="#" class="nav-link">Login</a>
+            <button><a href="#">Cadastre-se</a></button>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="assets/img/img header/menu.svg" alt=""></button>
+        </div>
+
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+        </ul>
+
+        <div class="login">
+            <a href="#" class="nav-link">Login</a>
+            <button><a href="#">Cadastre-se</a></button>
+        </div>
+
+    </div>
+
+</header>
+
+<section class="dashboard">
+    <div class="container dashboard_container">
+        <div class="but">
+            <button id="show_sidebar-btn" class="sidebar_toggle"><i class="uil uil-angle-right-b"></i></button>
+            <button id="hide_sidebar-btn" class="sidebar_toggle"><i class="uil uil-angle-left-b"></i></button>
+        </div>
+        <aside>
+            <ul>
+                <li>
+                    <a href="add-post.html"><i class="uil uil-pen"></i>
+                        <h5>Adicionar Post</h5>
+                    </a>
+                </li>
+                <a href="dashboard.html" class="active"><i class="uil uil-postcard"></i>
+                    <h5>Administrar Posts</h5>
+                </a></li>
+                <a href="add-category.html"><i class="uil uil-edit"></i>
+                    <h5>Adicionar Categoria</h5>
+                </a></li>
+                <a href="manage-categories.html"><i class="uil uil-list-ul"></i>
+                    <h5>Administrar Categoria</h5>
+                </a></li>
+            </ul>
+        </aside>
+        <main>
+            <h2>Administrar Posts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Categoria</th>
+                        <th>Editar</th>
+                        <th>Deletar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        <td>Jovens</td>
+                        <td><a href="edit-post.html" class="btn sm outro">Editar</a></td>
+                        <td><a href="delete-category.html" class="btn sm danger">Deletar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        <td>Educação</td>
+                        <td><a href="edit-post.html" class="btn sm outro">Editar</a></td>
+                        <td><a href="delete-category.html" class="btn sm danger">Deletar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        <td>Finanças</td>
+                        <td><a href="edit-post.html" class="btn sm outro">Editar</a></td>
+                        <td><a href="delete-category.html" class="btn sm danger">Deletar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                        <td>Risco/Problema</td>
+                        <td><a href="edit-post.html" class="btn sm outro">Editar</a></td>
+                        <td><a href="delete-category.html" class="btn sm danger">Deletar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</section>

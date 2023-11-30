@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    align-items: center;
+    justify-content: center;
+    min-height: 340px;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.conteiner {
+    margin: 2.5rem;
+    border: 2px outset #a16aff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5); /* Altere a sombra conforme necessário */
+    width: 100%; /* Ocupar toda a largura disponível */
+    max-width: 1000px; /* Largura máxima para evitar que o conteúdo se espalhe demais */
+}
+
+.sub {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+p {
+    text-indent: 2.0rem;
+    margin: 1.0rem 0;
+    padding: 0.5rem;
+    flex-shrink: 0;
+}
+.title{
+    font-size: 0.8rem;
+   
+}
+.text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+.line {
+    border-color: #5623AF;
+}
+
+/* Media Queries para responsividade */
+
+@media screen and (max-width: 524px) {
+    /* Estilos para tablet */
+    .main,
+    .conteiner {
+        margin: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* Estilos para celular */
+    .main, 
+    .conteiner {
+        margin: 1rem;
+    }
+
+    .title,
+    .sub {
+        padding: 1.5rem;
+    }
+
+    div,
+    p {
+        text-indent: 1.5rem;
+       
+    }
+}

@@ -1,0 +1,892 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 400;
+  --cor-destaque: #a775ff;
+  --cor-sec: #575757;
+}
+
+.pag {
+  color: var(--cor-destaque);
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 42px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  position: absolute;
+  right: 150px;
+}
+
+select {
+  background: #fbfaff;
+}
+
+/*card de notícias*/
+
+article {
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+.card {
+  width: auto;
+  margin: 20px;
+  padding: 0 0 20px 0;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.image img {
+  width: 100%;
+  padding-bottom: 14px;
+  object-fit: fill;
+}
+
+.title {
+  text-align: justify;
+  margin-left: 14px;
+  margin-right: 14px;
+  color: #000;
+  font-size: 14px;
+  line-height: 22px; /* 142.857% */
+  letter-spacing: 0.7px;
+}
+
+.descri {
+  text-align: justify;
+  margin-left: 14px;
+  margin-right: 14px;
+  color: var(--cor-sec);
+  font-size: 12px;
+  line-height: 15px; /* 150% */
+  letter-spacing: 0.5px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+#linha {
+  width: 90%;
+  border-bottom: 1px solid var(--cor-sec);
+  margin-bottom: 16px;
+  margin-left: 14px;
+}
+
+.data {
+  font-size: 12px;
+  color: var(--cor-sec);
+  line-height: 25px; /* 250% */
+  letter-spacing: 0.5px;
+  text-align: right;
+  margin-right: 14px;
+}
+
+/*Botão load more*/
+
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 180px;
+  height: 52px;
+  text-transform: uppercase;
+  background-color: var(--cor-destaque);
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease-out;
+  position: relative;
+}
+
+.load-more:hover {
+  background-color: lightgrey;
+  color: inherit;
+}
+
+.post article:nth-child(4) ~ article {
+  display: none;
+}
+
+/*loader*/
+
+.loading {
+  display: none;
+  height: 32px;
+  width: 32px;
+  margin: 0 auto;
+  animation: loader1 3s linear infinite;
+}
+@keyframes loader1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  clip: rect(16px, 32px, 32px, 0);
+  animation: loader2 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@keyframes loader2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border: 3px solid transparent;
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: loader3 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@keyframes loader3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--cor-destaque);
+  border-radius: 50%;
+}
+.load-more.show-loader {
+  width: 52px;
+  background-color: lightgray;
+  text-indent: -9999px;
+}
+.load-more.show-loader .loading {
+  display: block;
+}
+.load-more.loaded {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility 0.3s 0.3s, visibility 0.3s 0.3s, visibility 0.3s 0.3s;
+  text-indent: -9999px;
+}
+
+/*media query*/
+
+@media screen and (min-width: 411px) and (max-width: 449px) {
+  .card {
+    margin: 15px 35px;
+    padding: 0 0 12px 0;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 470px) {
+  .card {
+    margin: 15px 40px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .descri {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 500px) {
+  .card {
+    margin: 15px 45px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 530px) {
+  .card {
+    margin: 15px 52px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 531px) and (max-width: 550px) {
+  .card {
+    margin: 15px 62px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 570px) {
+  .card {
+    margin: 12px 75px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 571px) and (max-width: 590px) {
+  .card {
+    margin: 20px 80px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 591px) and (max-width: 610px) {
+  .card {
+    margin: 20px 87px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 640px) {
+  .card {
+    margin: 20px 95px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 690px) {
+  .card {
+    margin: 20px 115px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 691px) and (max-width: 730px) {
+  .card {
+    margin: 20px 130px;
+    padding: 0 0 10px 0;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .descri {
+    font-size: 16px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 731px) and (max-width: 800px) {
+  .card {
+    width: 660px;
+    height: 210px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+  }
+  .title {
+    font-size: 14px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+  }
+  .descri {
+    font-size: 13px;
+    float: left;
+    padding-top: 15px;
+    margin-left: 14px;
+    padding-bottom: 40px;
+  }
+  .data {
+    font-size: 11px;
+    margin-right: 16px;
+    float: right;
+  }
+  .image img {
+    width: 235px;
+    height: 245px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 7px 0;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 860px) {
+  .card {
+    width: 690px;
+    height: 220px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+  }
+  .title {
+    font-size: 14px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+  }
+  .descri {
+    font-size: 13px;
+    float: left;
+    padding-top: 15px;
+    margin-left: 14px;
+  }
+  .data {
+    font-size: 11px;
+    margin-right: 16px;
+    float: right;
+  }
+  .image img {
+    width: 250px;
+    height: 260px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 7px 0;
+  }
+}
+
+@media screen and (min-width: 861px) and (max-width: 900px) {
+  .card {
+    width: 750px;
+    height: 250px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+  }
+  .title {
+    font-size: 16px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+  }
+  .descri {
+    font-size: 14px;
+    float: left;
+    padding-top: 15px;
+    margin-left: 14px;
+  }
+  .data {
+    font-size: 13px;
+    margin-right: 16px;
+    float: right;
+  }
+  .image img {
+    width: 270px;
+    height: 290px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 7px 0;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 980px) {
+  .card {
+    width: 800px;
+    height: 250px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+  }
+  .title {
+    font-size: 18px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+    line-height: 24px;
+  }
+  .descri {
+    font-size: 16px;
+    float: left;
+    padding-top: 15px;
+    margin-left: 14px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+    float: right;
+  }
+  .image img {
+    width: 300px;
+    height: 290px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 7px 0;
+  }
+}
+
+@media screen and (min-width: 981px) and (max-width: 1100px) {
+  .card {
+    width: 880px;
+    height: 300px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+    padding-top: 50px;
+  }
+  .title {
+    font-size: 18px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+    line-height: 26px;
+  }
+  .descri {
+    font-size: 16px;
+    float: left;
+    padding-top: 25px;
+    margin-left: 14px;
+  }
+  .data {
+    font-size: 14px;
+    margin-right: 16px;
+    float: right;
+  }
+  .image img {
+    width: 310px;
+    height: 335px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 7px 0;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1280px) {
+  .card {
+    width: 940px;
+    height: 320px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+    padding-top: 50px;
+  }
+  .title {
+    font-size: 20px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+    line-height: 30px;
+  }
+  .descri {
+    font-size: 18px;
+    float: left;
+    padding-top: 25px;
+    margin-left: 14px;
+    line-height: 18px;
+  }
+  .data {
+    font-size: 15px;
+    margin-right: 16px;
+    float: right;
+  }
+  .image img {
+    width: 350px;
+    height: 385px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1350px) {
+  .card {
+    width: 995px;
+    height: 350px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+    padding-top: 50px;
+  }
+  .title {
+    font-size: 20px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+    line-height: 30px;
+  }
+  .descri {
+    font-size: 18px;
+    float: left;
+    padding-top: 25px;
+    margin-left: 14px;
+    line-height: 18px;
+  }
+  .data {
+    font-size: 15px;
+    margin-right: 16px;
+    float: right;
+  }
+  .image img {
+    width: 450px;
+    height: 420px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1351px) and (max-width: 1700px) {
+  .card {
+    width: 1070px;
+    height: 370px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .title {
+    font-size: 20px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+    line-height: 30px;
+  }
+  .descri {
+    font-size: 18px;
+    float: left;
+    padding-top: 25px;
+    margin-left: 14px;
+    line-height: 18px;
+  }
+  .data {
+    font-size: 15px;
+    margin-right: 16px;
+    float: right;
+    padding-top: 20px;
+  }
+  .image img {
+    width: 450px;
+    height: 440px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1701px) and (max-width: 2560px) {
+  .card {
+    width: 1070px;
+    height: 370px;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .title,
+  .descri {
+    margin: 0 16px 0 16px;
+  }
+  #linha {
+    float: right;
+    margin-right: 16px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .title {
+    font-size: 20px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 14px;
+    line-height: 30px;
+  }
+  .descri {
+    font-size: 18px;
+    float: left;
+    padding-top: 25px;
+    margin-left: 14px;
+    line-height: 18px;
+  }
+  .data {
+    font-size: 15px;
+    margin-right: 16px;
+    float: right;
+    padding-top: 20px;
+  }
+  .image img {
+    width: 450px;
+    height: 440px;
+    float: left;
+    object-fit: fill;
+  }
+  img,
+  .texto {
+    display: inline-block;
+  }
+  .texto {
+    padding: 10px 0;
+  }
+}

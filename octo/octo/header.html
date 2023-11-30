@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octofy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="Logo">
+                <!-- <img id="Logo-web" src="./img/Logo-Octofy.png" alt="Imagem"> -->
+                <img id="Logo-web" src="../img/Logo-Octofy.png" alt="Imagem">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                </ul>
+
+            </div>
+
+            <div class="login">
+                <a href="#" class="nav-link">Login</a>
+                <button><a href="#">Cadastre-se</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <!-- Para conseguirmos usar a função no click do botão E também utilizar esse código em outros arquivos, temos que substituir o onClick por um id e pegar esse id no JS -->
+                <!-- <button onclick="menuShow()"><img class="icon" src="../img/menu.svg" alt=""></button> -->
+                <button id="mobile-menu-button"><img class="icon" src="../img/menu.svg" alt=""></button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            </ul>
+
+            <div class="login">
+                <a href="#" class="nav-link">Login</a>
+                <button><a href="#">Cadastre-se</a></button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Type module diz ao JavaScript que ele arquivo ira importar outros arquivos javaScript (permite usar o export e import) -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>
